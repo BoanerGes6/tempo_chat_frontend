@@ -21,17 +21,11 @@ function Search() {
 
         stompClient.connect({}, () => {
             console.log("Connected as:", deviceName);
-<<<<<<< HEAD
+
             fetch("https://tempo-chat.onrender.com/devices")
               .then(res => res.json())
               .then(data => setDevices(data));
-=======
 
-            fetch("https://tempo-chat.onrender.com/devices")
-                .then(res => res.json())
-                .then(data => setDevices(data));
-
->>>>>>> f7a7bdd (added mobile UI)
             stompClient.subscribe("/topic/devices", (message) => {
                 console.log("Devices list:", message.body);
                 setDevices(JSON.parse(message.body));
