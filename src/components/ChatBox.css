@@ -73,7 +73,7 @@
     font-family: 'Courier New', Courier, monospace;
     padding: 0 25px;
 }
-@media screen and (min-width: 400px) { 
+@media screen and (max-width:450px) { 
     .chatbox-title {
         font-size: 38px;
         margin-top: 40px;
