@@ -60,7 +60,7 @@ body {
     transform: scale(1.05);
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (max-width:450px) {
     .logo-title {
         font-size: 38px;
         margin-top: 40px;
